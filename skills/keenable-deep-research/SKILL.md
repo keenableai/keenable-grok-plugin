@@ -32,6 +32,7 @@ comparisons.
 - Prefer primary and authoritative sources; treat aggregators and undated pages
   with caution.
 - For relative dates, compute exact dates from today before searching.
-- The tools are keyless by default. If you hit a rate limit during a long
-  research run, tell the user they can set `KEENABLE_API_KEY` to raise it; never
-  ask them to paste a key into chat.
+- The tools are keyless and rate-limited per IP. If you hit a rate limit during
+  a long research run, slow down before retrying and tell the user that a
+  Keenable API key raises the limit (the plugin README explains how); never ask
+  them to paste a key into chat.

@@ -3,7 +3,7 @@
     "keenable": {
       "type": "http",
       "url": "https://api.keenable.ai/mcp",
-      "note": "Keenable's hosted MCP server for web search and page-content extraction. Keyless by default: the public path needs no API key or signup (rate-limited). Set the KEENABLE_API_KEY environment variable to raise rate limits; a key is never required to use the tools."
+      "note": "Keenable's hosted MCP server for web search and page-content extraction. Keyless: the public path needs no API key or signup and is rate-limited per IP; this entry sends no credentials."
     }
   }
 }

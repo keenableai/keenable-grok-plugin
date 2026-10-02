@@ -35,6 +35,7 @@ authentication is needed to call them.
 
 ## Authentication and limits
 
-The server is configured at `https://api.keenable.ai/mcp` and is keyless by
-default. If you hit a rate limit, tell the user they can set `KEENABLE_API_KEY`
-in their environment to raise it. Never ask the user to paste a key into chat.
+The server is configured at `https://api.keenable.ai/mcp` and is keyless,
+rate-limited per IP. If you hit a rate limit, wait before retrying and tell the
+user that a Keenable API key raises the limit (the plugin README explains how).
+Never ask the user to paste a key into chat.
