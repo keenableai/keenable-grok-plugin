@@ -1,6 +1,6 @@
 {
   "name": "keenable",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Keyless web search and page-content extraction for Grok Build via Keenable's hosted MCP server. No signup or API key required.",
   "author": {
     "name": "Keenable",
