@@ -1,7 +1,15 @@
+# Dependabot opens PRs when GitHub Actions SHAs/tags or other manifests change.
+# Workflows pin actions to full commit SHAs; merge Dependabot bumps and keep
+# the trailing version comment in sync.
 version: 2
 updates:
   - package-ecosystem: github-actions
     directory: /
     schedule:
       interval: weekly
+      day: monday
     open-pull-requests-limit: 10
+    groups:
+      github-actions:
+        patterns:
+          - "*"
