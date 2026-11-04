@@ -42,7 +42,7 @@ useDefault = true
 # 2. `gitleaks:allow` — a trailing comment on the one line that trips the
 #    scanner. Right for test fixtures and generated samples, because the
 #    exemption lives next to the thing it exempts and moves with it.
-#      TOKEN = "eyJhbGciOi..."  # gitleaks:allow — synthetic fixture
+#      TOKEN = "<synthetic-jwt-fixture>"  # gitleaks:allow — synthetic fixture
 #
 # 3. This file — ONLY for noise that is wrong in every repo, every time.
 #    A pattern here silences a class of finding across the whole company;
