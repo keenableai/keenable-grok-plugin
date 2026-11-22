@@ -28,6 +28,11 @@ authentication is needed to call them.
 
 - Write concise, specific queries instead of long instructions.
 - Split multi-part questions into distinct searches when that improves coverage.
+- Pass `objective`: two or three self-contained sentences on what the search is
+  for (facts a good page must contain, context the query leaves out, sources to
+  prefer or exclude, what is already known), up to 1,000 characters, no personal
+  or confidential information. It helps the ranker pick pages for the task and
+  costs nothing extra.
 - For relative dates such as "last week," calculate exact dates from today.
 - Prefer primary and authoritative sources for factual or technical claims.
 - Cross-check consequential claims against more than one independent source.
