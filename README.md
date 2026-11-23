@@ -48,7 +48,8 @@ Research the leading agent observability platforms and compare them with citatio
 
 The plugin connects only to Keenable's hosted MCP endpoint at
 `https://api.keenable.ai/mcp` over HTTP. It sends and requests no credentials,
-runs no shell, and touches no local files.
+runs no shell, and touches no local files. Search queries, the optional search
+`objective` and requested URLs are sent to Keenable.
 
 ## Resources
 

@@ -28,13 +28,12 @@ authentication is needed to call them.
 
 - Write concise, specific queries instead of long instructions.
 - Split multi-part questions into distinct searches when that improves coverage.
-- Pass `objective`: two or three self-contained sentences restating the research
-  question in general, public terms (facts a good page must contain, kinds of
-  sources to prefer or exclude), up to 1,000 characters. It is sent to Keenable
-  with the query. Do not quote or summarize the user's conversation, and never
-  include user identifiers, personal or confidential details; if the task cannot
-  be described without them, omit the objective. It helps the ranker pick pages
-  for the task.
+- Pass `objective` only for multi-step or ambiguous questions, not every search.
+  In one to three sentences, say what the query leaves out (who, where, when,
+  which sources count) and what earlier searches found; do not restate the
+  question. Up to 1,000 characters. It is sent to Keenable with the query, so
+  never include user identifiers or personal or confidential details, and omit
+  it when it cannot be written without them.
 - For relative dates such as "last week," calculate exact dates from today.
 - Prefer primary and authoritative sources for factual or technical claims.
 - Cross-check consequential claims against more than one independent source.
