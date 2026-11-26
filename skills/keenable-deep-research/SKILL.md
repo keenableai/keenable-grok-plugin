@@ -16,6 +16,12 @@ comparisons.
    before searching so the plan is auditable.
 2. **Search per sub-question.** Run a focused `search_web_pages` query for each.
    Keep queries specific; split further when coverage is thin.
+   Pass `objective` only when a sub-question is ambiguous or builds on earlier
+   results: say what the query leaves out and what earlier searches found, and
+   do not restate the sub-question (up to 1,000 characters). It is sent to
+   Keenable with the query; never include user identifiers, personal or
+   confidential details or conversation content, and omit it if it cannot be
+   written without them.
 3. **Read the strongest sources.** Use `fetch_page_content` on the most relevant
    results to read them in full rather than trusting snippets for anything
    consequential.
